@@ -10,7 +10,6 @@ public class Product {
 	private int price;
 	
 	public Product() {
-		
 	}
 	
 	public Product(int prodId, String prodName, int prodPrice) {
