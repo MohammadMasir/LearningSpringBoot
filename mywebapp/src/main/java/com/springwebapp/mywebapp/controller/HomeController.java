@@ -1,10 +1,7 @@
-package com.springwebapp.mywebapp;
+package com.springwebapp.mywebapp.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 
@@ -14,6 +11,11 @@ public class HomeController {
 	@RequestMapping("/")
 	public String greet() {
 		return "Welcome to My first SpringBoot WebApplication..";
+	}
+	
+	@RequestMapping("/home")
+	public String home() {
+		return "THE HOMEPAGE..";
 	}
 	
 	@RequestMapping("/about")
